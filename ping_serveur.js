@@ -3,6 +3,8 @@ const axios = require("axios")
 const app = express();
 const port = 4567;
 
+axios.post("http://localhost:8080/sent-address/s1", { data: "4567" });
+
 app.post("/send-data", (req, res) => {
   const data = { message: "Hello from server 1" };
   // Envoi de la donnée à server 2
