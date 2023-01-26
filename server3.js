@@ -1,7 +1,7 @@
 const express = require("express");
 const axios = require("axios");
 const app = express();
-const port = 8080
+const port = parseInt(process.env.PORT) || 8080;
 var s1 = null
 var s2 = null
 app.use(express.json())
